@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>	// for random numbers
 #include <time.h>		// for randomization (using system time)
+#include <signal.h>
 #include "screen.h"
 #include "sound.h"
 
 int main(){
 	FILE *f;
-	short sd[80000];
+	short sd[RATE];
 	for(;;){
-		system(RCMD);
+		int ret = system(RCMD);
+		if(ret == SIGINT) break;
 		f = fopen("test.wav", "r");
 		if(f == NULL){
 			printf("Cannot open the file \n");
@@ -27,10 +29,10 @@ int main(){
 		fread(&sd, sizeof(sd), 1, f);		// read WAV data
 		fclose(f);
 		displayWAVHDR(hdr);
-		// display WAVDATA();
+		displayWAVDATA(sd);
 	}
 	resetColors();
-	getchar();
+//	getchar();
 }
 
 // commands at these positions to show the bar chart
