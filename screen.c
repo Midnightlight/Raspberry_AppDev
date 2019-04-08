@@ -5,8 +5,13 @@
 
 void barChart(int db[]){
 	int i, j;
+
 	for(i=0; i< COL; i++){	// for 80 columns
 		for(j=0; j<db[i]/3; j++){
+// if else to display a different color for bars over 60dB (only the part >60 dB)
+			if(db[i]>60	&& j>20) setColors(BLUE, bg(BLACK));
+			else setColors(RED, bg(BLACK));
+
 			printf("\033[%d;%dH", 35-j, i+1); // if use j+1 instead of 35-j, it will change direction
 #ifdef UNICODE		// conditional compilation
 			printf("%s", BAR);
