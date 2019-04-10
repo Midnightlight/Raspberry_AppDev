@@ -20,7 +20,6 @@ struct WAVHDR{
 
 	char Subchunk2ID[4];		// must be "data"
 	int Subchunk2Size;			// calculated
-//	int Count;
 };
 
 // function declarations

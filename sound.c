@@ -11,6 +11,19 @@ void showID(char *idname,char *id){
 	puts("");	//make a new line
 }
 
+// this function is only called by displayWAVDATA(), so no need to put
+// a  declaration in sound.h. The function finds how many peaks from 80-pieces
+// of decibel values
+int findPeaks(int d[]){
+		int c =0, i;
+		for (i=1; i<80; i++){
+			if(d[i] >= 75 && d[i-1] < 75) c++;
+		}
+		if(d[0] >= 75) c++;
+		return c;
+}
+
+
 // this function gets one second of samples (16000), and calculate
 // 80 pieces of decibelvalue, we know we need to calculate oone decibel
 // value from 200 samples, decible value calculaculated by RMS formula
@@ -36,6 +49,11 @@ void displayWAVDATA(short s[]){
 	}
 #ifndef DEBUG
 	barChart(dB);
+	int peaks = findPeaks(dB);
+	setColors(WHITE, bg(BLACK));
+	printf("\033[1;61H");
+	printf("Peaks: %d	\n", peaks);
+
 #endif
 }
 
@@ -54,7 +72,7 @@ void displayWAVHDR(struct WAVHDR h){
 	printf("Bits per sample: %d\n", h.BitsPerSample);
 	showID("Subchunk2ID", h.Subchunk2ID);
 	printf("Subchunk2 size: %d\n",h.Subchunk2Size);
-//	printf("Count: %d", h.count);
+
 #else
 	setColors(WHITE, bg(RED));
 	printf("\033[1;1H");
@@ -66,10 +84,5 @@ void displayWAVHDR(struct WAVHDR h){
 	printf("\033[1;41H");
 	printf("Duration: %.2fsec				",(float)h.Subchunk2Size/h.ByteRate);
 	setColors(RED, bg(BLACK));
-
-//	printf("\033[1;61H");
-//	printf("Count: %d", h.Count);
-//	setColors(RED, bg(BLACK));
-
 #endif
 }
