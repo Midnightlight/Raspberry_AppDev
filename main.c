@@ -5,6 +5,7 @@
 #include "screen.h"
 #include "sound.h"
 #include "comm.h"
+
 int main(int argc, char **argv){
 		if(argc>1){	// if tghe user has given some command line argument
 			printf("Test tone generator\n");
