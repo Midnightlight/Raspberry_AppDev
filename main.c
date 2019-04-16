@@ -13,16 +13,16 @@ int main(int argc, char **argv){
 			printf("No. of channels (1 or 2): ");
 			scanf("%d", &ch);
 			if(ch == 1){
-				printf("Mono Frequency: ");
-				scanf("%d", &fL);
+					printf("Mono Frequency: ");
+					scanf("%d", &fL);
 			}
 			else if(ch == 2){
-				printf("Give me Left and Right freq: ");
-				scanf("%d %d", &fL, &fR);
+					printf("Give me Left and Right freq: ");
+					scanf("%d %d", &fL, &fR);
 			}
 			else{
-				printf("Wrong number of channels\n");
-				return 1;
+					printf("Wrong number of channels\n");
+					return 1;
 			}
 			printf("Duration of sound: ");
 			scanf("%f", &duration);
