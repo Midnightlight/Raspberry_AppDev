@@ -24,6 +24,7 @@ void testTone(int c, int fl, int fr, float d){
 	// all the argument are okay, the rest of code is to
 	// 1) make a correct wave header, 2) generate correct samples
 	// 3) write both header and samples to a file
+
 	struct WAVHDR h;
 	int samples = 44100*d;
 	fillID(h.ChunkID, "RIFF");
