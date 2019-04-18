@@ -128,17 +128,16 @@ Software configuration
 
 **4. List of Files**
 
-        - README : this file
-        - comm.c : the communication part of the project
-        - comm.h : the header file of comm.c
-        - main.c : contains the main() function
-        - makefile : the makefile of the project
-        - screen.c : the displaying part of the project
-        - screen.h : the header file of screen.c
-        - sound.c : the sound analyzing part of the project
-        - sound.h : the header file of the sound.c
-	- sound.php : the data receiving page
-        - testcurl.c : the communication testing module
+	- README : this file
+	- comm.c : the communication part of the project
+	- comm.h : the header file of comm.c
+	- main.c : contains the main() function
+	- makefile : the makefile of the project
+	- screen.c : the displaying part of the project
+	- screen.h : the header file of screen.c
+	- sound.c : the sound analyzing part of the project
+	- sound.h : the header file of the sound.c
+	- testcurl.c : the communication testing module
 
 
 **5. Copyright**
