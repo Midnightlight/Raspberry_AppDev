@@ -72,21 +72,13 @@ Software configuration
             - Run “sudo apt-get install alsa-utils=1.0.25-4” to downgrade.
             - Reboot (if necessary).
 
-
-    To make sure alsa-ultils installation was ready:
-            - Run “arecord -r44100 -c1 -f S16_LE -d5 test.wav” to test that your microphone is working.
-
-            
     To make sure alsa-ultils installation was ready:
             - Run “arecord -r44100 -c1 -f S16_LE -d5 test.wav” to test that your microphone is working. 
             You should see a “test.wav” file in the current folder.
             - Put earphone on. Run “aplay test.wav” to check that your recording is okay.
 
     This program also requrie libcurl library
-        To install libcurl, follow these instructions:
-
-            - First use command “ls /usr/include/curl” to identify that /usr/include/curl/ folder exists
-
+       To install libcurl, follow these instructions:
             - First use command “ls /usr/include/curl” to identify that /usr/include/curl/ folder exists 
             or not.
             - If the folder doesn’t exist. Run “sudo apt-get update” to update the application list.
