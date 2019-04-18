@@ -48,16 +48,6 @@ Hardware configuration
                         }
         - Run "alsamixer" you should be able to see that USB sound card is the default audio device.
 
-
-1.2
-Software configuration
-
-    - This program require alsa-utils 1.0.25
-    - If your system is using the 1.0.28 version, it is recommended to downgrade to the 1.0.25 version in
-    order to avoid bugs.
-
- To downgrade alsa-ultis, follow these instructions:
-
 1.2 
 Software configuration
 
