@@ -116,7 +116,7 @@ Software configuration
         - Run command "./sound.out" to run the project. 
         You will see the columns which display the recorded sound.
         - You can also open "testcurl.txt" for accessing the recorded results.
-        - To delete excution file, to command "make clean".
+        - To delete execution file, to command "make clean".
         - The recorded data is also sent to school server for storage.
 
 
