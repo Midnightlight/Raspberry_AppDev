@@ -99,15 +99,15 @@ Run the program from the file wave.a as followed: ./wave.a your_device_name
     - testcurl.c : the communication testing module
 
 
-5. Copyright
+5. Copyright 
 This project was created by GIANG LE (e1800927).
 
 
-6. Contact Info
+6. Contact Info 
 Email: vegiangle2602@gmail.com
 
 
-7. Credits and Acknowledgements
-Author: GIANG LE (e1800927) (VAMK)
+7. Credits and Acknowledgements 
+Author: GIANG LE (e1800927) (VAMK) 
 Instructor: Mr.GAO CHAO (VAMK)
 
