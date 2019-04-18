@@ -2,7 +2,8 @@
 # Acoustic Sensor using RPi3
 --------------------------------
 
-## This is application development ver 1.1 ----- writed by GIANG LE, instructed by GAO CHAO
+## This is application development ver 1.1 ----- 
+## writed by GIANG LE, instructed by GAO CHAO
 
 This application offers a possibility to turn a Raspberry Pi as a sound device.
 The application comes with 2 functions: a sound collector and a test tone generator.
@@ -17,13 +18,13 @@ List of Content:
 7. Credits and Acknowledgements
 --------------------------------
 
-1. Configuration Instruction
-This section contains 2 part: hardware configuration and software configuration.
+1. Configuration Instruction 
+    This section contains 2 part: hardware configuration and software configuration.
 
-1.a. Hardware configuration
-This program is designed for to ultilize a Rasperry Pi 3 with an external USB soundcard and a microphone.
-Ethernet connection is required for saving data to a remote server.
-RPi onboard sound card doesn’t have microphone interface. We have to change the default audio device to be USB sound card.
+1.a. Hardware configuration 
+    This program is designed for to ultilize a Rasperry Pi 3 with an external USB soundcard and a microphone. 
+    Ethernet connection is required for saving data to a remote server. 
+    RPi onboard sound card doesn’t have microphone interface. We have to change the default audio device to be USB sound card.
 
 To do this, follow these instructions:
     - Make sure the soundcard and micro phone is plugged in.
