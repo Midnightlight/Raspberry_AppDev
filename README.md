@@ -1,5 +1,5 @@
 --------------------------------
-# Acoustic Sensor using Raspberry Pi 3
+# Acoustic Sensor Using Raspberry Pi 3
 --------------------------------
 
 ## This is application development ver 1.1 
