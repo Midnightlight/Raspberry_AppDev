@@ -24,12 +24,6 @@ List of Content:
     This section contains 2 part: hardware configuration and software configuration.
 
 1.1
-Hardware configuration
-
-    This program is designed for to ultilize a Rasperry Pi 3 with an USB soundcard and a microphone.
-    Ethernet connection is required for saving data to a remote server.
-    RPi onboard sound card doesn’t have microphone interface.
-
 Hardware configuration 
 
     This program is designed for to ultilize a Rasperry Pi 3 with an USB soundcard and a microphone. 
