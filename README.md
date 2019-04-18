@@ -124,6 +124,7 @@ Software configuration
 
 **6. Contact Info** 
 
+    Name: GIANG LE
     Email: vegiangle2602@gmail.com
 
 
