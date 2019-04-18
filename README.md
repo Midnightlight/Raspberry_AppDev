@@ -129,5 +129,5 @@ Software configuration
 
 **7. Credits and Acknowledgements**
 
-    - Author: GIANG LE (e1800927) (VAMK)
-    - Instructor: Mr.GAO CHAO (VAMK)
+    - Author: GIANG LE - e1800927 (VAMK)
+    - Instructor: Dr.GAO CHAO - Principal Lector (VAMK)
