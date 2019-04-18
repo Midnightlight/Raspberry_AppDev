@@ -134,12 +134,6 @@ Software configuration
 	- testcurl.c : the communication testing module
 
 
-**5. Copyright**
-
-        - sound.php : the data receiving page
-        - testcurl.c : the communication testing module
-
-
 **5. Copyright** 
 
     This project was created by GIANG LE (e1800927).
