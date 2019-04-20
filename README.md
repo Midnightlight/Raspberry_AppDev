@@ -146,8 +146,8 @@ Software configuration
 
     1. Install alsamixer using command "sudo apt-get install alsa".
     2. Boot up RPi, and apply the USB sound card.
-    3. RPi onboard sound card does not have microphone interface. We have to change the default audio device
-    to be USB sound card.
+    3. RPi onboard sound card does not have microphone interface. We have to change the default audio 
+    device to be USB sound card.
     4. Use command "lsusb" to check if your USB sound card is mounted.
     5. Use "sudo nano /etc/asound.conf" command and put following content to the file:
                     pcm.!default {
@@ -167,8 +167,8 @@ Software configuration
 
 **+ Install libcurl library**
 
-    1. First use command "ls/usr/include/curl" or "ls/usr/include/arm-linux-gnueabihf/curl" to identify that
-    libcurl library is installed
+    1. First use command "ls/usr/include/curl" or "ls/usr/include/arm-linux-gnueabihf/curl" to identify 
+    that libcurl library is installed
     2. If the folder doesn't exist. Run "sudo apt-get update" to up-date the application list.
     3. Run "sudo apt-get install libcurl3" to install the libcurl 3.
     4. Run "sudo apt-get install libcurl4-openssl-dev" to install the development API of libcurl 4.
