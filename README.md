@@ -23,8 +23,7 @@ List of Content:
 
     This section contains 2 part: hardware configuration and software configuration.
 
-1.1
-Hardware configuration 
+***1.1. Hardware configuration*** 
 
     + This program is designed for to ultilize a Raspberry Pi 3 with an USB soundcard, a headphone and a 
     microphone, power cable.
@@ -49,8 +48,7 @@ Hardware configuration
                         }
         - Run "alsamixer" you should be able to see that USB sound card is the default audio device.
 
-1.2 
-Software configuration
+***1.2. Software configuration***
 
     - This program require alsa-utils 1.0.25
     - If your system is using the 1.0.28 version, it is recommended to downgrade to the 1.0.25 version 
@@ -197,10 +195,7 @@ Software configuration
 
 
 **3. Operating Instruction**
-
-        - Run command "make" to build the project.
-        - Run command "./sound.out" to run the project. 
-        
+ 
 3.1 Run a program that records the frequency and peaks from the sound card.
         
         1. Prepare all the files from this resporitory into your Raspberry Pi's directory.
@@ -254,15 +249,13 @@ Software configuration
 
 **7. Credits and Acknowledgements**
 
-7.1
-Credits
+***7.1. Credits***
     
     - Author: GIANG LE - e1800927 (VAMK)
     - Instructions by Dr. GAO CHAO - Principal Lector (VAMK) (http://www.cc.puv.fi/~gc/newhome/index.html)
     - Equipment provided by Vaasa University of Applied Sciences.
     
-7.2
-Acknowledgements
+***7.2.  Acknowledgements***
     
     - Basic knowledge of how to create a project on Raspberry Pi/Linux system.
     - Basis of developing an application for a sound sensor of an LED light (switching on/off by clapping).
