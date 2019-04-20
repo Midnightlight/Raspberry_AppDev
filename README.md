@@ -53,13 +53,14 @@ Hardware configuration
 Software configuration
 
     - This program require alsa-utils 1.0.25
-    - If your system is using the 1.0.28 version, it is recommended to downgrade to the 1.0.25 version in 
-    order to avoid bugs.
+    - If your system is using the 1.0.28 version, it is recommended to downgrade to the 1.0.25 version 
+    in order to avoid bugs.
 
     To downgrade alsa-ultis, follow these instructions:
             - Use “sudo nano /etc/apt/sources.list” command and add the last line.
             - Run “sudo apt-get update.
-            - Run “sudo aptitude versions alsa-utils” to check if version 1.0.25 of alsa-util is available.
+            - Run “sudo aptitude versions alsa-utils” to check if version 1.0.25 of alsa-util is 
+            available.
             - Run “sudo apt-get install alsa-utils=1.0.25-4” to downgrade.
             - Reboot (if necessary).
 
@@ -94,8 +95,8 @@ Software configuration
 
 **+ RPi Default Booting & Keyboard Layout**
 
-    1. By default Raspberry Pi boots into X-server (graphic) mode. This increases booting time, but in most 
-    cases we don't use a display with Raspberry Pi, so the first thing is to disable it. 
+    1. By default Raspberry Pi boots into X-server (graphic) mode. This increases booting time, but in 
+    most cases we don't use a display with Raspberry Pi, so the first thing is to disable it. 
     To do so, you need to connect RPi to a display via HDMI-DIV cable.
     2. You also need a USB keyboard for this step. Connect it to your Raspberry Pi.
     3. Once booted, open a "terminal" window (Ctrl + ESC, and choose from the "Accessories")
