@@ -200,10 +200,31 @@ Software configuration
 
         - Run command "make" to build the project.
         - Run command "./sound.out" to run the project. 
+        
+3.1 Run a program that records the frequency and peaks from the sound card.
+        
+        1. Prepare all the files from this resporitory into your Raspberry Pi's directory.
+        2. Connect a sound card including a microphone.
+        3. Run the command "make". Notice that there are .o files created.
+        4. Run the command "./sound.out" 
         You will see the columns which display the recorded sound.
-        - You can also open "testcurl.txt" for accessing the recorded results.
+        You can also open "testcurl.txt" for accessing the recorded results.
+        5. Clap into the microphone and notice that the peak value recorded every 1 minute.
+        6. See your frequency recorded on the .php site.
+
         - To delete execution file, to command "make clean".
         - The recorded data is also sent to school server for storage.
+        
+3.2 Run a program that generates sound based on the frequency value the user enters.
+
+        1. Prepare all the files from this resporitory into your Raspberry Pi's directory.
+        2. Run the command "make". Notice that there are .o files created.
+        3. Run the command "./sound.out" + frequency wanted to generate **from 30 to 16000Hz**
+        4. Choose how many channels (1 for mono / 2 for stereo).
+        5. Choose how long is the sound generated. (from 1 to 10 seconds).
+        6. Run command "scp testTone.wav user@host.com:/your directory"
+        7. Go to your destinated directory and use headphone to check out the testTone.wav sound 
+        with the chosen frequency and channels.
 
 
 **4. List of Files**
@@ -233,5 +254,18 @@ Software configuration
 
 **7. Credits and Acknowledgements**
 
+7.1
+Credits
+    
     - Author: GIANG LE - e1800927 (VAMK)
-    - Instructor: Dr.GAO CHAO - Principal Lector (VAMK)
+    - Instructions by Dr. GAO CHAO - Principal Lector (VAMK) (http://www.cc.puv.fi/~gc/newhome/index.html)
+    - Equipment provided by Vaasa University of Applied Sciences.
+    
+7.2
+Acknowledgements
+    
+    - Basic knowledge of how to create a project on Raspberry Pi/Linux system.
+    - Basis of developing an application for a sound sensor of an LED light (switching on/off by clapping).
+    - Creating an application that generates different tones in Linux.
+    
+    
