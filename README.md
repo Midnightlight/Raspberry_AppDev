@@ -26,7 +26,8 @@ List of Content:
 1.1
 Hardware configuration 
 
-    + This program is designed for to ultilize a Raspberry Pi 3 with an USB soundcard, a headphone and a microphone, power cable.
+    + This program is designed for to ultilize a Raspberry Pi 3 with an USB soundcard, a headphone and a 
+    microphone, power cable.
     + Ethernet connection is required for saving data to a remote server. 
     + Raspberry Pi 3 onboard sound card doesn’t have microphone interface. 
 
@@ -102,50 +103,51 @@ Software configuration
     5. Select from "boot options": "Text console, auto-login".
     6. The newer version of Raspbian disables SSH by default, therefore you have to enable it. 
     Navigate to "Interfacing Options" and select "SSH", choose "Yes", Select "Ok".
-    7. You can also change the keyboard to be "Generic 105 key/Finnish" in "4. Internationalization Options".
+    7. You can change the keyboard to be "Generic 105 key/Finnish" in "4. Internationalization Options".
     8. Reboot "sudo reboot"
 
 
 **+ Send IP Address by Email** 
 
-    1. When using Raspberry Pi remotely, you need to know its IP address to connect to it. There are many ways to get 
-    the IP address from your Pi. The simplest way to edit "rc.local" file.
+    1. When using Raspberry Pi remotely, you need to know its IP address to connect to it. There are many 
+    ways to get the IP address from your Pi. The simplest way to edit "rc.local" file.
     2. First you need to get a digital signature of your student ID. Please run following command: 
     pi@raspberrypi:~ $ curl --url "http://www.cc.puv.fi/~gc/php/sha_stuID.php" -d "id=e1700346"
     And you will get:
     welcome to SHA-1 hashing function
     Your ID : e1700346
     SHA hash of your ID: c040f7cde553dc1739ff9b6eebcb1d6f994ce3cb
-    3. Copy the SHA string to clipboard (in Putty window, Ctrl + "Insert" to copy, Shift + "Insert" to paste) 
+    3. Copy the SHA string to clipboard 
+    (in Putty window, Ctrl + "Insert" to copy, Shift + "Insert" to paste) 
     and run command .sudo nano /etc/rc.local. and add following lines:
     
     #Print the IP address
     sleep 30
     _IP=$(hostname -I) || true
-        if [ "$_IP" ]; then
-            printf "My IP address is %s\n" "$_IP"
-            curl --url http://www.cc.puv.fi/~gc/php/sendMailRPi.php -d .email=gc@vamk.fi&from=e1700346&hash=YOURHASH.
-            curl --url http://www.cc.puv.fi/~gc/php/rasp.php -d "ip=$_IP&name=e1700346"
-            curl --url http://www.cc.puv.fi/~juma/raspi/rasp_ip.php -d "auth=mckdoe03&name=e1700346&ip=$_IP"
-            fi
-            exit 0
+    if [ "$_IP" ]; then
+    printf "My IP address is %s\n" "$_IP"
+    curl --url http://www.cc.puv.fi/~gc/php/sendMailRPi.php -d .email=gc@vamk.fi&from=e1700346&hash=YOURHASH.
+    curl --url http://www.cc.puv.fi/~gc/php/rasp.php -d "ip=$_IP&name=e1700346"
+    curl --url http://www.cc.puv.fi/~juma/raspi/rasp_ip.php -d "auth=mckdoe03&name=e1700346&ip=$_IP"
+    fi
+    exit 0
             
     4. The line .sleep 30. is to guarantee that IP address is available.
-    5. The 1st "curl" command sends IP address to your mail box (please change "email" to your email) using a 
-    PHP program. 
+    5. The 1st "curl" command sends IP address to your mail box (please change "email" to your email) using 
+    a PHP program. 
     The program will verify your ID and signature so please make sure they are correct.
     6. The 2nd "curl" command sends IP address to GC.s PHP page and you can see your device name/IP on 
     http://www.cc.puv.fi/~gc/php/rasp.php. 
-    7. The 3rd .curl. command sends IP address to Jukka Matila.s PHP page and you can see your device in his page:
-    http://www.cc.puv.fi/~juma/raspi/. 
+    7. The 3rd .curl. command sends IP address to Jukka Matila.s PHP page and you can see your device in his 
+    page: http://www.cc.puv.fi/~juma/raspi/. 
 
 
 **+ Install USB sound card as default audio device**
 
     1. Install alsamixer using command "sudo apt-get install alsa".
     2. Boot up RPi, and apply the USB sound card.
-    3. RPi onboard sound card does not have microphone interface. We have to change the default audio device to be 
-    USB sound card.
+    3. RPi onboard sound card does not have microphone interface. We have to change the default audio device
+    to be USB sound card.
     4. Use command "lsusb" to check if your USB sound card is mounted.
     5. Use "sudo nano /etc/asound.conf" command and put following content to the file:
                     pcm.!default {
@@ -165,7 +167,8 @@ Software configuration
 
 **+ Install libcurl library**
 
-    1. First use command "ls/usr/include/curl" or "ls/usr/include/arm-linux-gnueabihf/curl" to identify that libcurl library is installed
+    1. First use command "ls/usr/include/curl" or "ls/usr/include/arm-linux-gnueabihf/curl" to identify that
+    libcurl library is installed
     2. If the folder doesn't exist. Run "sudo apt-get update" to up-date the application list.
     3. Run "sudo apt-get install libcurl3" to install the libcurl 3.
     4. Run "sudo apt-get install libcurl4-openssl-dev" to install the development API of libcurl 4.
