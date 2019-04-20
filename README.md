@@ -249,16 +249,6 @@ List of Content:
 
 **7. Credits and Acknowledgements**
 
-***7.1. Credits***
-    
     - Author: GIANG LE - e1800927 (VAMK)
     - Instructions by Dr. GAO CHAO - Principal Lector (VAMK) (http://www.cc.puv.fi/~gc/newhome/index.html)
     - Equipment provided by Vaasa University of Applied Sciences.
-    
-***7.2.  Acknowledgements***
-    
-    - Basic knowledge of how to create a project on Raspberry Pi/Linux system.
-    - Basis of developing an application for a sound sensor of an LED light (switching on/off by clapping).
-    - Creating an application that generates different tones in Linux.
-    
-    
