@@ -174,6 +174,7 @@ List of Content:
 
 
 **+ Adding files to your Github**
+
     ***- First setup -***
     
     1. Create a respository on Github with "your respository name".
