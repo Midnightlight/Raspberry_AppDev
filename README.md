@@ -175,7 +175,7 @@ List of Content:
 
 **+ Adding files to your Github**
 
-    ***- First setup -***
+***- First setup -***
     
     1. Create a respository on Github with "your respository name".
     2. Go to your directory that you want to remote to Github on Linux.
